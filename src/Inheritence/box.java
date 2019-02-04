@@ -31,30 +31,11 @@ class Rectangle extends Shape{
 	}
 }
 class Box extends Rectangle{
-
-	public double height;
-
-	public Box(){
-		super();
-		height = -1;
-	}
-
-	public Box(double l, double w, double h){
-		super(l,w);
-		height = h;
-	}
-
-	public void setDim(double l, double w, double h){
-		super.setDim(l,w);
-		height = h;
-	}
-
-	public double getHeight(){
-		return height;
-	}
-
-	public double area(){
-		return 2*getLength()*getWidth()+getLength()*getWidth()+height*getWidth();
+	int length;
+	public Box(int length, int width, int heigth){
+		this.length=length;
+		this.width=width;
+		this height=height;
 	}
 
 	public double volume(){
